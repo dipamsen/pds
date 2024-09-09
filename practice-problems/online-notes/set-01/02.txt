@@ -1,0 +1,26 @@
+a_0 = n % 2;
+a_1 = [n / 2] % 2;
+...
+a_i = [n / 2^i] % 2;
+...
+a_(t-1) = [n / 2^(t-1)] % 2;
+
+where [x] denotes floor(x)
+
+In terms of Euclid's division lemma, each step can be written as:
+
+n       = n_1     * 2 + a_0                  (n_1 = [n / 2])
+n_1     = n_2     * 2 + a_1                  (n_2 = [n / 2^2])
+...
+n_i     = n_(i+1) * 2 + a_i                  (n_(i+1) = [n / 2^(i+1)])
+...
+n_(t-1) = n_t     * 2 + a_(t-1)              (n_t = [n / 2^t] = 0)
+
+On back substitution from bottom to top, we get
+
+n = ([n/4] * 2 + a_1) * 2 + a_0                = [n/4] * 4 + a_1 * 2 + a_0 * 1
+n = (([n/8] * 2 + a_2) * 2 + a_1) * 2 + a_0    = [n/8] * 8 + a_2 * 4 + a_1 * 2 + a_0 * 1
+...
+n =                                            = a_(t-1) * 2^(t-1) + ... + a_2 2^2 + a_1 2^1 + a_0 2^0
+
+Hence Proved.

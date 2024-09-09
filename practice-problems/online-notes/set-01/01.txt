@@ -1,0 +1,27 @@
+a)
+
+LOAD [m] TO A
+LOAD [n] TO B
+ADD B TO A
+ADD -1 TO A
+STORE C TO [m]
+
+b) 
+
+LOAD [m] to A
+LOAD [n] to B
+ADD 5 TO A
+ADD 5 TO B
+MULTIPLY B TO A
+STORE A TO [t]
+
+c)
+
+LOAD [m] to A
+LOAD [n] to B
+ADD 5 TO A
+ADD 5 TO B
+DIVIDE A / B TO C
+STORE C TO [t] 
+DIVIDE B / A TO C
+ADD C TO [t] 

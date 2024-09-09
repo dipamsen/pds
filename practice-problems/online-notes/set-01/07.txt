@@ -1,0 +1,6 @@
+a) x + y == (int) (x + y)
+b) (x < m && y > m) || (x > m && y < m)
+c) m == (int) x
+d) x > 3 && (x - (int)x) < 0.3
+e) !(m % 2 ^ n % 2)
+f) sqrt(m) == (int) sqrt(m)

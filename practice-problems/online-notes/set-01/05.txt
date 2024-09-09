@@ -1,0 +1,28 @@
+Assume x has a terminating binary expansion. Let binary expansion of x be 
+x = 0.a_0 a_1 a_2 ... a_n
+
+Then, x can be written as
+
+x = (a_0 a_1 a_2 a_3 ... a_n) * 2^-n
+
+Here, clearly a = a_0 a_1 a_2 a_3 ... a_n is an integer.
+
+Thus,
+
+x = a / 2^n
+
+Hence, x is of the form a / 2^k.
+
+To prove the converse:
+
+Assume x is of the form a / 2^k. Then,
+
+x = a * 2^-k
+
+Let a = (a_0 a_1 a_2 a_3 ... a_n) (binary)
+
+Then x = a_0 a_1 ... a_(n-k) . a_(n-k+1) ... a_n
+
+Clearly, x must have a terminating binary expansion.
+
+Hence proved.

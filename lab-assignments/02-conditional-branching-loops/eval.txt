@@ -1,0 +1,13 @@
+Marks for Problem 1.c: 24/30
+
+- The number of iterations is not correct.
+- The logic for both expressions is somewhat incorrect.
+- No error calculation is implemented.
+------------------------------------------------------
+Marks for Problem 2.c: 24/30
+
+- The number of iterations should also be calculated.
+- To print the result up to n decimal places, use: printf("%.*f (computed in %d iterations)\n", n, ...).
+- Ensure that the loop breaks when there is no change in value up to n decimal places between two consecutive iterations.
+------------------------------------------------------
+Marks for Problem 3.c: 40/40
