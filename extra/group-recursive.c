@@ -3,6 +3,7 @@
 // 1. GROUP -> Group any two consecutive digits. Eg. 98 + 7 + 6 + ... + 1
 // 2. REPLACE -> Replace + sign with -. Eg. 98 - 7 + 6 + ... + 1
 // By using these two operations, print all possible solutions which give result 100.
+// Eg. 9 + 8 + 76 + 5 + 4 - 3 + 2 - 1
 
 #include <stdio.h>
 
