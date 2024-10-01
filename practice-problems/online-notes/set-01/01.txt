@@ -21,7 +21,7 @@ LOAD [m] to A
 LOAD [n] to B
 ADD 5 TO A
 ADD 5 TO B
-DIVIDE A / B TO C
+MOVE A / B TO C
 STORE C TO [t] 
-DIVIDE B / A TO C
+MOVE B / A TO C
 ADD C TO [t] 

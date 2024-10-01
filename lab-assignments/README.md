@@ -9,7 +9,8 @@ My solutions to PDS Lab Assignments - Autumn 2024 Session, Section 3.
 | Topic                                                                                                      | Marks |
 | ---------------------------------------------------------------------------------------------------------- | ----- |
 | [Assignment 1: Datatypes, Variables, Operators, Expressions and I/O+](./01-datatypes-variables-operators/) | 100   |
-| [Assignment 2: Conditional Branching and Loops](./02-conditional-branching-loops/)                         | 88    |
+| [Assignment 2: Conditional Branching and Loops](./02-conditional-branching-loops/)                         | 90    |
 | [Assignment 3: Loops and Functions](./03-loops-functions/)                                                 | 100   |
 | [Assignment 4: Recursion](./04-recursion/)                                                                 | 100   |
 | [Lab Test 1](./lab-test-01/)                                                                               | 98    |
+| [Assignment 5: Pointers and Dynamic Memory Allocation](./05-pointers-and-dma/)                             | -     |
