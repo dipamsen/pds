@@ -13,4 +13,6 @@ My solutions to PDS Lab Assignments - Autumn 2024 Session, Section 3.
 | [Assignment 3: Loops and Functions](./03-loops-functions/)                                                 | 100   |
 | [Assignment 4: Recursion](./04-recursion/)                                                                 | 100   |
 | [Lab Test 1](./lab-test-01/)                                                                               | 98    |
-| [Assignment 5: Pointers and Dynamic Memory Allocation](./05-pointers-and-dma/)                             | -     |
+| [Assignment 5: Pointers and Dynamic Memory Allocation](./05-pointers-and-dma/)                             | 100   |
+| [Assignment 6: 1D and 2D array, dynamic memory allocation, searching](./06-arrays-dma-searching/)          | 90    |
+| [Assignment 7: Searching, Sorting and Structures](./07-searching-sorting-structs/)                         | -     |
