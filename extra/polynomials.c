@@ -1,5 +1,6 @@
 // Storing, and performing operations (addition, subtraction, multiplication) on
 // polynomials. Memory efficient for sparse polynomials. (Linked List implementation)
+// See also: polynomials-arr.c for a simpler array-based implementation.
 
 #include <stdio.h>
 #include <stdlib.h>
