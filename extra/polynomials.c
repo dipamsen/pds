@@ -1,4 +1,4 @@
-// Storing, and performing operations (addition, subtraction) on
+// Storing, and performing operations (addition, subtraction, multiplication) on
 // polynomials. Memory efficient for sparse polynomials. (Linked List implementation)
 
 #include <stdio.h>
@@ -25,6 +25,11 @@ void insert(Term **head, int a, int k) { // double pointer because may need to m
     Term *t = h;
     while (t->next != NULL) {
         // insert in middle
+        if (t->k == k) {
+            t->a += a;
+            free(new);
+            return;
+        }
         if (t->k > k && k > t->next->k) {
             Term *u = t->next;
             t->next = new;
@@ -32,6 +37,11 @@ void insert(Term **head, int a, int k) { // double pointer because may need to m
             return;
         }
         t = t->next;
+    }
+    if (t->k == k) {
+        t->a += a;
+        free(new);
+        return;
     }
     // insert at tail
     t->next = new;
@@ -131,6 +141,38 @@ Term *subtract(Term *p1, Term *p2) {
     return res;
 }
 
+void freell(Term *head) {
+    if (head != NULL) {
+        freell(head->next);
+        free(head);
+    }
+}
+
+Term *multiply(Term *p1, Term *p2) {
+    Term *res = NULL;
+
+    Term *t1 = p1; // tail pointers
+    Term *t2 = p2;
+
+    while (t1 != NULL) {
+        t2 = p2;
+        while (t2 != NULL) {
+            if (res == NULL) {
+                res = malloc(1 * sizeof(Term));
+                res->a = t1->a * t2->a;
+                res->k = t1->k + t2->k;
+                res->next = NULL;
+            } else {
+                insert(&res, t1->a * t2->a, t1->k + t2->k);
+            }
+            t2 = t2->next;
+        }
+        t1 = t1->next;
+    }
+
+    return res;
+}
+
 int main() {
     Term *p1 = NULL, *p2 = NULL; // polynomials
 
@@ -177,4 +219,14 @@ int main() {
     printf("\nDifference: ");
     Term *d = subtract(p1, p2);
     print(d);
+
+    printf("\nProduct: ");
+    Term *pr = multiply(p1, p2);
+    print(pr);
+
+    freell(p1);
+    freell(p2);
+    freell(sum);
+    freell(d);
+    freell(pr);
 }
