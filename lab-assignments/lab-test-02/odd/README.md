@@ -1,4 +1,4 @@
-# PDS Lab Test 1 (Odd Roll Numbers)
+# PDS Lab Test 2 (Odd Roll Numbers)
 
 1. (70 Marks) In an institute, a student record means (alphanumeric) roll number (max size 8), name of the student (max size 36), and CGPA (real number) of the student.\
    a. Define a structure to store student records.\
