@@ -41,8 +41,8 @@ void print(Node *head) {
     printf("\n");
 }
 
-void reverse(Node **head) {
-    Node *prev = NULL, *curr = *head, *next = curr->next;
+Node *reverse(Node *head) {
+    Node *prev = NULL, *curr = head, *next = curr->next;
     while (curr != NULL) {
         curr->next = prev;
         prev = curr;
@@ -50,7 +50,8 @@ void reverse(Node **head) {
         if (curr != NULL)
             next = curr->next;
     }
-    *head = prev;
+    head = prev;
+    return head;
 }
 
 int main() {
@@ -60,7 +61,7 @@ int main() {
 
     print(head);
 
-    reverse(&head);
+    head = reverse(head);
 
     print(head);
 }
