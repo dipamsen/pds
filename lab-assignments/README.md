@@ -15,5 +15,7 @@ My solutions to PDS Lab Assignments - Autumn 2024 Session, Section 3.
 | [Lab Test 1](./lab-test-01/)                                                                               | 98    |
 | [Assignment 5: Pointers and Dynamic Memory Allocation](./05-pointers-and-dma/)                             | 100   |
 | [Assignment 6: 1D and 2D array, dynamic memory allocation, searching](./06-arrays-dma-searching/)          | 90    |
-| [Assignment 7: Searching, Sorting and Structures](./07-searching-sorting-structs/)                         | -     |
-| [Assignment 8: Structures and Pointers to Structures](./08-structs)                                        | -     |
+| [Assignment 7: Searching, Sorting and Structures](./07-searching-sorting-structs/)                         | 100   |
+| [Assignment 8: Structures and Pointers to Structures](./08-structs)                                        | 98    |
+| [Lab Test 2](./lab-test-02/)                                                                               | -     |
+| [Assignment 9: Linked Lists, Stacks, Queues](./09-ll-stacks-queues/)                                       | -     |
